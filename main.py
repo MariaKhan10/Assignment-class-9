@@ -6,13 +6,14 @@ import os
 import time
 from dotenv import load_dotenv
 
-from modules import ai_writing_assistant, task_manager, budget_tracker, habit_tracker, notes_manager, ai_assistant,doctorbot
+from modules import ai_writing_assistant, task_manager, budget_tracker, habit_tracker, notes_manager, ai_assistant, doctorbot
 import stripe
 
-load_dotenv()
+stripe_secret_key = st.secrets["STRIPE_SECRET_KEY"]
+stripe_publishable_key = st.secrets["STRIPE_PUBLISHABLE_KEY"]
 
+stripe.api_key = stripe_secret_key
 
-stripe.api_key = st.secrets["STRIPE_SECRET_KEY"]
 
 def create_checkout_session():
     try:

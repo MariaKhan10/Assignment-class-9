@@ -3,6 +3,9 @@ credentials:
     aqsa:
       name: aqsa
       password: $2b$12$wQlj4.Un0B9JLuzS4PukSuif/cVZhkVdBQCibM85IN1iM3xuKCoFu
+    fairy:
+      name: fairy
+      password: $2b$12$1G3bgIQylMYDJOEWOAXOhezOjnbAfuA6frT/OWA8Qn6wZs4orPWFa
     fia:
       name: fia
       password: $2b$12$w0H/ChsrNGpohlX0LtCff.DT4XHd26ChW4VTaw9vq1gNxn8OA98d.
@@ -15,6 +18,9 @@ credentials:
     harry:
       name: harry
       password: $2b$12$cQZzNLDesetiY1FhLTOeOeA4ipKPD5afwQdgIJt8689eCOEYDwpG6
+    harrypotter:
+      name: harrypotter
+      password: $2b$12$mjfjvlSoasFC2irhkVWvU.wgP.pKonk7PSIUOprf5sPtaTypjGMq2
     hira:
       name: hira
       password: $2b$12$7fKdnqYd5g7VbANKJ2HRXuMXemws9WG5ezp4IMNUZgqzvBALrcTH2

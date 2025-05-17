@@ -1,11 +1,7 @@
-# .streamlit/config.toml
-
 [theme]
-
-textColor = "#2C3E50"
+base = "dark"  # You can change to "light" if preferred
+primaryColor = "#d44242"  # Bold red for buttons/accents
+backgroundColor = "#1c1f26"  # Very dark navy-gray for body
+secondaryBackgroundColor = "#2c3e50"  # Dark but lighter than main background (for sidebar, boxes)
+textColor = "#F5F7FA"  # Very light gray for high contrast
 font = "sans serif"
-base="dark"
-primaryColor="#d44242"
-backgroundColor="#2B707F"
-secondaryBackgroundColor="#0f0f48"
-

@@ -1,0 +1,7 @@
+streamlit
+pandas
+matplotlib
+plotly
+reportlab
+openai
+streamlit-authenticator==0.2.3

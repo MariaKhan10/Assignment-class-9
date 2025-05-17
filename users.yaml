@@ -1,0 +1,74 @@
+credentials:
+  usernames:
+    aqsa:
+      name: aqsa
+      password: $2b$12$wQlj4.Un0B9JLuzS4PukSuif/cVZhkVdBQCibM85IN1iM3xuKCoFu
+    fia:
+      name: fia
+      password: $2b$12$w0H/ChsrNGpohlX0LtCff.DT4XHd26ChW4VTaw9vq1gNxn8OA98d.
+    gi:
+      name: gi
+      password: $2b$12$GmK.9rYJv4nrMdWaZ1PtoObOeAxMmvmLwwEzvd3JNk70wOFkhhIdO
+    haris:
+      name: haris
+      password: $2b$12$wnAdVVFHMaVLztJmUl3s4.uUa0QbRDIo8hOmb/5QYbPbWxcFvgxIm
+    harry:
+      name: harry
+      password: $2b$12$cQZzNLDesetiY1FhLTOeOeA4ipKPD5afwQdgIJt8689eCOEYDwpG6
+    hira:
+      name: hira
+      password: $2b$12$7fKdnqYd5g7VbANKJ2HRXuMXemws9WG5ezp4IMNUZgqzvBALrcTH2
+    hu:
+      name: hu
+      password: $2b$12$hqweSy1mqjGNBFF4ZXLQHeHZ7ljc2KAD1i4lrjHbvcN8S/7EVi1JO
+    jannat:
+      name: jannat
+      password: $2b$12$j5pRWonL2CLpCFifIs/hyORboy7KyAzcc./5vIJF7UAvF92WSOvLy
+    janntkhan:
+      name: janntkhan
+      password: $2b$12$Ap6Wozbz/Z1dEn1syPung.GVf2O4swpdvT7ynJLTxf0tuMDdgUsnO
+    ji:
+      name: ji
+      password: $2b$12$XhYDxZLqcEc3T5uI9yg10.sbOZ32yi7qOmMmhiju1bxSUM2XpzOpa
+    kainat:
+      name: kainat
+      password: $2b$12$x2768clREekW94qixpZYROqMNZnZZPRAT8oUw2SUrs9.YTs3qpK3K
+    kaira:
+      name: kaira
+      password: $2b$12$LigO.siunRo9jHkrDXSUg.W.xIOIbAYZFACqed4VgsZpadn4P4yB6
+    ki:
+      name: ki
+      password: $2b$12$oaV3w8tqC6Avgpiw37sUzOlRJdxsULpF07E68Z466oPbqdxa7/lRK
+    kiran:
+      name: kiran
+      password: $2b$12$9ZyYXl4mSJT9CUAZQWPPkeFtq6RgryMVVUfRj0pCfSB9oeD8SkLXu
+    maira:
+      name: maira
+      password: $2b$12$apKv3OGDljvn/Bw2nCuyBu1DPegk/VcOQ3KQM2qdX6xV/aeAc543m
+    maria:
+      name: maria
+      password: $2b$12$somethinghashed
+    maria khan:
+      name: maria khan
+      password: $2b$12$omDJAIEnN5j0w.Yu0/r3o.ZQcbJ6uONlmHZMRutzbmkN2QpGzLfqG
+    mariakiran:
+      name: mariakiran
+      password: $2b$12$sxS2ypw/XSap44ZLjsJoTO/6w.BnUoBgpgnQkCTI21vFEPyMQpl32
+    mirha:
+      name: mirha
+      password: $2b$12$cHPhbMGvz7RNUWRa/8mBBOcoBlNzsy.T.6Z4dCvQasBpGsuxawCIO
+    naheed:
+      name: naheed
+      password: $2b$12$0VBHeh9wl2kyCMjw/.T1WuyBjRJcsdT4faJIJh9nRhWnyTK/FL9KW
+    namra:
+      name: namra
+      password: $2b$12$rLY5yeaJflZgBJmnxgVZbOTOc8kQE4M5.ZpzbSNOGK4mdcwh7ludS
+    nida:
+      name: nida
+      password: $2b$12$YwRwJh4Pk0vCVoedS.0n.ufpgI.dhMJs91KD.xR53676jUGYt58Y2
+    rimsha:
+      name: rimsha
+      password: $2b$12$mkgpnhof2n9xo8vr0Hk.HuPN7Te6bAIH8behAQ3mAetAWe3PfIwpi
+    sumira:
+      name: sumira
+      password: $2b$12$NNwhOyL3dV3rjeNF2/kzXOSvYYN8Rc4ZW4eggYptwR96dMyaInQPS

@@ -30,8 +30,8 @@ def create_checkout_session():
                 "quantity": 1,
             }],
             mode="payment",
-            success_url="http://localhost:8501?success=true",
-            cancel_url="http://localhost:8501?canceled=true",
+            success_url="https://smartkit.streamlit.app/?success=true",
+            cancel_url="https://smartkit.streamlit.app/?canceled=true",
         )
         return session.url
     except Exception as e:

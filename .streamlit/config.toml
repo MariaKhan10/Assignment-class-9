@@ -1,7 +1,7 @@
 [theme]
-base = "dark"  # You can change to "light" if preferred
-primaryColor = "#d44242"  # Bold red for buttons/accents
-backgroundColor = "#1c1f26"  # Very dark navy-gray for body
-secondaryBackgroundColor = "#2c3e50"  # Dark but lighter than main background (for sidebar, boxes)
-textColor = "#F5F7FA"  # Very light gray for high contrast
+base = "dark"
+primaryColor = "#FF6B6B"  # A brighter red for buttons/accents
+backgroundColor = "#2B3A4B"  # Softer dark blue-gray (better contrast on mobile)
+secondaryBackgroundColor = "#34495E"  # Sidebar/background sections
+textColor = "#F0F3F4"  # Bright enough to show up clearly
 font = "sans serif"

@@ -19,8 +19,8 @@ def create_checkout_session():
             payment_method_types=["card"],
             line_items=[{
                 "price_data": {
-                    "currency": "usd",  # Try usd to rule out currency issue
-                    "unit_amount": 50000,
+                    "currency": "usd",  
+                    "unit_amount": 100,
                     "product_data": {
                         "name": "Upgrade to Premium",
                     },
@@ -33,7 +33,7 @@ def create_checkout_session():
         )
         return session.url
     except Exception as e:
-        st.error(f"Stripe Error: {e}")  # Show in Streamlit
+        st.error(f"Stripe Error: {e}")  
         return None
 
 
@@ -250,23 +250,23 @@ def main():
                 doctorbot.run()   
 
 
-            with st.sidebar:
-                st.markdown("---") 
-                st.markdown("### 🔒 Premium Access")
-                if st.button("💳 Upgrade to Premium – PKR 500"):
-                    checkout_url = create_checkout_session()
-                    if checkout_url:
-                        st.components.v1.html(
-                            f"""
-                            <script>
-                                window.top.location.href = "{checkout_url}";
-                            </script>
-                            """,
-                            height=0,
-                        )
-                    else:
-                        st.error("Failed to create checkout session. Check your Stripe key.")
-       
+        with st.sidebar:
+            st.markdown("---") 
+            st.markdown("### 🔒 Premium Access")
+            if st.button("💳 Upgrade to Premium – PKR 500"):
+                checkout_url = create_checkout_session()
+                if checkout_url:
+                    st.markdown(f"""
+                        <a href="{checkout_url}" target="_blank">
+                            <button style='padding:10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;'>
+                                Proceed to Payment
+                            </button>
+                        </a>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.error("Failed to create checkout session. Check your Stripe key.")
+
+                
 
     elif menu == "Register":
       st.title("🔐 Register New User")

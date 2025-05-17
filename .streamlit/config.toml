@@ -1,7 +1,7 @@
 [theme]
 base = "dark"
 primaryColor = "#FF6B6B"  # A brighter red for buttons/accents
-backgroundColor = "#2B3A4B"  # Softer dark blue-gray (better contrast on mobile)
+backgroundColor = "#556285"  # Softer dark blue-gray (better contrast on mobile)
 secondaryBackgroundColor = "#34495E"  # Sidebar/background sections
 textColor = "#F0F3F4"  # Bright enough to show up clearly
 font = "sans serif"

@@ -8,3 +8,4 @@ streamlit-authenticator==0.2.3
 python-dotenv
 pyyaml
 stripe
+google.generativeai

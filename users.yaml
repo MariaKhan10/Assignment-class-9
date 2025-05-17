@@ -21,6 +21,9 @@ credentials:
     harrypotter:
       name: harrypotter
       password: $2b$12$mjfjvlSoasFC2irhkVWvU.wgP.pKonk7PSIUOprf5sPtaTypjGMq2
+    hia:
+      name: hia
+      password: $2b$12$nwTgfU/JLMZ1H1Icl2zPCukUEyRe4dUtxWpAYpIeftbQaUmSBDNCu
     hira:
       name: hira
       password: $2b$12$7fKdnqYd5g7VbANKJ2HRXuMXemws9WG5ezp4IMNUZgqzvBALrcTH2

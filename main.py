@@ -12,7 +12,7 @@ import stripe
 load_dotenv()
 
 
-stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
+stripe.api_key = st.secrets["STRIPE_SECRET_KEY"]
 
 def create_checkout_session():
     try:

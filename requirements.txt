@@ -9,3 +9,6 @@ python-dotenv
 pyyaml
 stripe
 google.generativeai
+deep_translator
+FPDF
+pandas

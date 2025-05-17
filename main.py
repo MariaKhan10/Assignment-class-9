@@ -4,7 +4,6 @@ import yaml
 import bcrypt
 import os
 import time
-from dotenv import load_dotenv
 
 from modules import ai_writing_assistant, task_manager, budget_tracker, habit_tracker, notes_manager, ai_assistant, doctorbot
 import stripe
@@ -14,15 +13,14 @@ stripe_publishable_key = st.secrets["STRIPE_PUBLISHABLE_KEY"]
 
 stripe.api_key = stripe_secret_key
 
-
 def create_checkout_session():
     try:
         session = stripe.checkout.Session.create(
             payment_method_types=["card"],
             line_items=[{
                 "price_data": {
-                    "currency": "pkr",
-                    "unit_amount": 50000,  
+                    "currency": "usd",  # Try usd to rule out currency issue
+                    "unit_amount": 50000,
                     "product_data": {
                         "name": "Upgrade to Premium",
                     },
@@ -35,7 +33,9 @@ def create_checkout_session():
         )
         return session.url
     except Exception as e:
+        st.error(f"Stripe Error: {e}")  # Show in Streamlit
         return None
+
 
 USERS_FILE = "users.yaml"
 
@@ -250,18 +250,23 @@ def main():
                 doctorbot.run()   
 
 
-        with st.sidebar:
-            st.markdown("---") 
-            st.markdown("### 🔒 Premium Access")
-            if st.button("💳 Upgrade to Premium – PKR 500"):
-                checkout_url = create_checkout_session()
-                if checkout_url:
-                    st.markdown(f'''
-                        <meta http-equiv="refresh" content="0; url={checkout_url}">
-                        If you are not redirected, <a href="{checkout_url}">click here</a>.
-                    ''', unsafe_allow_html=True)
-                else:
-                    st.error("Failed to create checkout session. Check your Stripe key.")        
+            with st.sidebar:
+                st.markdown("---") 
+                st.markdown("### 🔒 Premium Access")
+                if st.button("💳 Upgrade to Premium – PKR 500"):
+                    checkout_url = create_checkout_session()
+                    if checkout_url:
+                        st.components.v1.html(
+                            f"""
+                            <script>
+                                window.top.location.href = "{checkout_url}";
+                            </script>
+                            """,
+                            height=0,
+                        )
+                    else:
+                        st.error("Failed to create checkout session. Check your Stripe key.")
+       
 
     elif menu == "Register":
       st.title("🔐 Register New User")
